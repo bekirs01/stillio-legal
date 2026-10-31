@@ -1,0 +1,145 @@
+:root {
+  --ivory: #f7f8f5;
+  --white: #ffffff;
+  --ink: #182c2b;
+  --muted: #3e524f;
+  --teal: #147d72;
+  --teal-pressed: #0f665d;
+  --line: #e1e6e1;
+  --mint: #e6efe8;
+  --focus: #0f665d;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--teal-pressed);
+  text-underline-offset: 0.16em;
+}
+
+a:hover { color: var(--teal); }
+
+a:focus-visible,
+.skip:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  transform: translateY(-150%);
+  background: var(--white);
+  color: var(--ink);
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.skip:focus { transform: none; }
+
+.wrap {
+  width: min(42rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.25rem 0 3rem;
+}
+
+header {
+  padding: 0.4rem 0 1.25rem;
+}
+
+.mark {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal-pressed);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.25rem 0 0.4rem;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.meta {
+  margin: 0;
+  color: var(--muted);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: var(--mint);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a[aria-current="page"] {
+  background: var(--teal);
+  color: var(--white);
+}
+
+main {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: clamp(1.1rem, 3vw, 2rem);
+}
+
+h2 {
+  margin: 1.8rem 0 0.45rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+h2:first-child { margin-top: 0; }
+
+p, li { color: var(--ink); }
+
+ul, ol { padding-left: 1.2rem; }
+
+li + li { margin-top: 0.35rem; }
+
+.callout {
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
+  background: var(--mint);
+  border-radius: 16px;
+}
+
+footer {
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 420px) {
+  .wrap { width: min(42rem, calc(100% - 1.25rem)); }
+  main { border-radius: 16px; }
+}

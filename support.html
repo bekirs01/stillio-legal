@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stillio Support</title>
+  <meta name="description" content="How to use Stillio and what to check when monitoring, capture, playback, or permissions do not behave as expected.">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <p class="mark">Stillio</p>
+      <h1>Support</h1>
+      <p class="meta">Stillio 1.0.0 for iPhone and iPad. Developer: Bekir Sucikaran.</p>
+      <nav aria-label="Pages">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html" aria-current="page">Support</a>
+      </nav>
+    </header>
+    <main id="content">
+      <div class="callout">
+        <p>Stillio does not guarantee that it will detect every movement. It compares brightness inside the area you select. A small, brief, or distant change can be missed. Keep the device still, use steady light, and choose an area that covers what you want to watch.</p>
+      </div>
+
+      <h2>Monitoring</h2>
+      <p>Place the device on a stable surface, facing the area you care about. Allow the camera when iOS asks. On the detection screen, drag the frame to the part of the picture you want to watch and pinch to zoom. Then start monitoring and leave Stillio open in front of you.</p>
+      <p>Stillio watches only while it is in the foreground. The screen stays awake during monitoring so the camera can keep running. If you switch to another app or lock the screen, monitoring stops. It does not start again by itself. Open Stillio and start monitoring again.</p>
+      <p>Detection is not instant. The camera needs a short moment after monitoring starts, and a change has to be large enough for the sensitivity you chose. Moving or shaking the device can look like motion. Stillio does not identify what moved.</p>
+
+      <h2>Selected area and sensitivity</h2>
+      <ul>
+        <li><strong>Area.</strong> Only the frame you set is checked. Movement outside that frame is ignored. If the frame is hard to see, or it sits on a bright edge, open the area screen and adjust it before monitoring.</li>
+        <li><strong>Low</strong> waits for a stronger change across more of the frame.</li>
+        <li><strong>Medium</strong> and <strong>High</strong> respond to smaller changes.</li>
+        <li><strong>Max</strong> checks frames more often and can notice a smaller cluster of change. It is still limited by the camera and is not instant.</li>
+      </ul>
+      <p>A higher level is easier to trigger. It is not a promise that every movement will be caught.</p>
+
+      <h2>Alarm</h2>
+      <p>Sound and vibration follow the switches in Settings, and they run only while Stillio is open. Alarm sound follows the device’s media volume and the volume slider in the app. If Alarm sound is off, or the media volume is zero, you will not hear it. Vibration is separate. Some iPads do not vibrate. Use Test alarm while the app is open to check the current settings.</p>
+
+      <h2>Optional captures, playback, and export</h2>
+      <p>Capture can be off, one photo, or a silent video of up to 10 seconds. Captures are saved in Stillio on the device. Videos have no microphone audio. Open Events to view a photo or play a video. Playback uses the play control on that event and pauses when you leave the app.</p>
+      <p>Share and Save to Photos happen only when you tap them. Share opens the system share sheet. Save to Photos copies the file into Photos and can ask for add-only Photos access the first time. Stillio does not read the rest of your library. Deleting an event inside Stillio removes Stillio’s copy. It does not remove a copy already in Photos or a copy you already shared.</p>
+
+      <h2>Permissions and audio</h2>
+      <ul>
+        <li><strong>Camera off or restricted.</strong> Monitoring cannot start. Use the in-app Settings button to open iOS Settings, allow the camera for Stillio, then return and try again. A device-management restriction cannot be overridden inside the app.</li>
+        <li><strong>No camera, or the camera is in use.</strong> Close the other app that is using the camera and try again. The simulator picture is not a live camera, so monitoring there is not a real-world test.</li>
+        <li><strong>Photos.</strong> Stillio asks to add items only after Save to Photos. Denying that permission skips the Photos copy. The capture in Stillio remains until you delete it there.</li>
+        <li><strong>Audio.</strong> Stillio does not use the microphone, so a saved video is silent on purpose. There is no microphone permission to enable. For the alarm, turn Alarm sound on, raise the media volume, and use Test alarm. Turn Vibration on only if the device can vibrate.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>Email <a href="mailto:bekirsucikaran00@gmail.com">bekirsucikaran00@gmail.com</a>. Include the device model, iOS version, and what you expected to happen. Stillio cannot sign in to your device or view the camera from this page.</p>
+      <p>Privacy details are on the <a href="privacy.html">Privacy Policy</a>.</p>
+    </main>
+    <footer>
+      <p>Stillio Support. Contact Bekir Sucikaran at <a href="mailto:bekirsucikaran00@gmail.com">bekirsucikaran00@gmail.com</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>
